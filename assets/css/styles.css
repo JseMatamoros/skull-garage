@@ -1,0 +1,89 @@
+* {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar cortado */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos personalizados para el navbar */
+.navbar-custom {
+    background-color: #000; /* Cambia #000 al código de color que desees para el negro completo */
+    position: fixed;
+    width: 58%; /* Cambiar el ancho a la mitad deseada */
+    transition: width 0.3s;
+    z-index: 1000; /* Agregar un valor alto para que el navbar esté en primer plano */
+    clip-path: polygon(0% 0%, 100% 0%, 90% 90%, 0% 100%); /* Polígono para el corte diagonal */
+}
+
+/* lo que ocurre cuando el navbar esta en estado "expanded" */
+.navbar-custom.expanded {
+    width: 100%;
+    clip-path: none;
+}
+/* estilo de enlaces navbar quitando efecto link letra azul*/
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+/* navbar comportamiento cursor sobre el enlace */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+/* CAROUSEL CONTENT POSITION*/
+.slide-content {
+    position: absolute;
+    top: 40%;
+    left: 10%; /* Ajusta la posición horizontal del contenido */
+    max-width: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  /* Ajusta el tamaño de la imagen del logotipo en el carrusel */
+.logo-img {
+    margin-top: 100px;
+    max-width: 17rem; /* Ajusta el ancho máximo según lo deseado */
+    height: auto; /* Asegura la proporción correcta */
+}
+
+
+.slide-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* Asegúrate de ajustar el color del texto */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+/* Estilos iniciales del footer */
+.site-footer {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TESTING FOOTER styles*/
+.site-footer a {
+    color: #fff; /* Cambiar el color de los enlaces */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+/* Cambiar color al pasar el cursor sobre los enlaces */
+.site-footer a:hover {
+    color: #555;
+}
+/* ##########################################################################################3 */
+
+
+
+
+

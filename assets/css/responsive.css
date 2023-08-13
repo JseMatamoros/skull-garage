@@ -1,0 +1,134 @@
+/* altura carousel */
+@media (max-width: 768px) {
+    .carousel-inner {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        right: 5%;
+        transform: translate(0%, -50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        /* Ajusta el ancho del contenido según lo deseado */
+        margin: 0 auto;
+    }
+
+    .carousel-item.active {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        background: none;
+        /* Fondo transparente */
+        border: none;
+        /* Sin borde */
+        padding: 0;
+        /* Sin espaciado interno */
+        transition: transform 0.3s;
+        /* Transición suave */
+        left: 75%;
+        
+    }
+
+    /* Cambia la escala al hacer hover sobre el botón toggler */
+    .navbar-toggler:hover {
+        transform: scale(1.1);
+    }
+
+    /* Quita el efecto de enfoque al hacer click en el botón toggler */
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-logo {
+        width: 45px; /* Cambia el valor según lo desees */
+        height: auto; /* Para mantener la proporción */
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-inner {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        right: 15%;
+        transform: translate(0%, -50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        /* Ajusta el ancho del contenido según lo deseado */
+        margin: 0 auto;
+    }
+
+    .carousel-item.active {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+    .navbar-toggler {
+        position: absolute;
+        background: none;
+        /* Fondo transparente */
+        border: none;
+        /* Sin borde */
+        padding: 0;
+        /* Sin espaciado interno */
+        transition: transform 0.3s;
+        /* Transición suave */
+        left: 85%;
+        
+    }
+
+    /* Cambia la escala al hacer hover sobre el botón toggler */
+    .navbar-toggler:hover {
+        transform: scale(1.1);
+    }
+
+    /* Quita el efecto de enfoque al hacer click en el botón toggler */
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-logo {
+        width: 45px; /* Cambia el valor según lo desees */
+        height: auto; /* Para mantener la proporción */
+    }
+
+
+}
