@@ -1,7 +1,10 @@
 * {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Barriecito', cursive;
+font-family: 'Josefin Sans', sans-serif; */
 }
+
 
 /* navbar cortado */
 body {
@@ -34,11 +37,11 @@ body {
     color: #ccc;
 }
 
-/* CAROUSEL CONTENT POSITION*/
+/* CAROUSEL CONTENT POSITION todo el contenido que esta encima del slide*/
 .slide-content {
     position: absolute;
-    top: 40%;
-    left: 10%; /* Ajusta la posición horizontal del contenido */
+    top: 65%;
+    left: 18%; /* Ajusta la posición horizontal del contenido */
     max-width: 30%;
     transform: translateY(-50%);
     display: flex;
@@ -48,9 +51,12 @@ body {
   
   /* Ajusta el tamaño de la imagen del logotipo en el carrusel */
 .logo-img {
-    margin-top: 100px;
-    max-width: 17rem; /* Ajusta el ancho máximo según lo deseado */
-    height: auto; /* Asegura la proporción correcta */
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical */
+    left: 150%; /* Ajusta la posición horizontal */
+    transform: translateY(-50%);
+    max-width: 15rem;
+    height: auto;
 }
 
 
@@ -60,6 +66,7 @@ body {
     border-radius: 5px;
     color: #fff; /* Asegúrate de ajustar el color del texto */
     margin-top: 10px;
+    padding-top: 20;
     line-height: 1.5;
 }
 
