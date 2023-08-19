@@ -24,8 +24,7 @@
         rel="stylesheet">
     <!-- leftlit js -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-   crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -56,8 +55,24 @@
                         href="https://www.google.com/maps/d/u/3/edit?mid=1DC7nb5sdIYLypErCKPARVCU9np4WQgE&usp=sharing"
                         target="_blank">Visitanos</a>
 
-                    <a class="nav-link" href="#">Servicios</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Mecanica</a>
+                            <a class="dropdown-item" href="#">Electrica</a>
+                            <a class="dropdown-item" href="#">Soldadura</a>
+                            <a class="dropdown-item" href="#">Pintura</a>
+                            
+                            <!-- Agrega más opciones según sea necesario -->
+                        </div>
+                    </div>
+
                     <a class="nav-link" href="#">Galeria</a>
+                    <a class="nav-link" href="#">Blog</a>
                     <a class="wathsapp-link nav-link" href="#" target="_blank">
                         Contactanos <i class="bi bi-whatsapp"></i>
                     </a>
@@ -157,7 +172,8 @@
                     <div class="card-body">
                         <!-- Contenido de texto a la derecha -->
                         <h5 class="card-title">¡Te damos la bienvenida a nuestro nuevo local!</h5>
-                        <p class="card-text">Estamos emocionados de presentarte nuestras instalaciones recién inauguradas. Ven a visitarnos y descubre todo lo que tenemos para ofrecer.</p>
+                        <p class="card-text">Estamos emocionados de presentarte nuestras instalaciones recién
+                            inauguradas. Ven a visitarnos y descubre todo lo que tenemos para ofrecer.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -166,35 +182,45 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <!-- Sección "¿Quiénes Somos?" -->
         <section class="quienes-somos mt-5">
             <h2>¿Quiénes Somos?</h2>
-            <p>Somos más que un taller mecánico de motos; somos apasionados por las dos ruedas y la excelencia en el servicio. En Skull Garage, nuestra historia es una mezcla de pasión, dedicación y compromiso.</p>
-        
+            <p>Somos más que un taller mecánico de motos; somos apasionados por las dos ruedas y la excelencia en el
+                servicio. En Skull Garage, nuestra historia es una mezcla de pasión, dedicación y compromiso.</p>
+
             <h3>Nuestra Visión</h3>
-            <p>Aspiramos a ser reconocidos como el referente en soluciones de alta calidad para motocicletas, brindando innovación y excelencia en cada proyecto.</p>
-        
+            <p>Aspiramos a ser reconocidos como el referente en soluciones de alta calidad para motocicletas, brindando
+                innovación y excelencia en cada proyecto.</p>
+
             <h3>Nuestra Misión</h3>
-            <p>Nuestra misión es superar las expectativas de nuestros clientes al proporcionar servicios mecánicos, eléctricos, de soldadura y pintura que optimicen el rendimiento y la estética de sus motos.</p>
-        
+            <p>Nuestra misión es superar las expectativas de nuestros clientes al proporcionar servicios mecánicos,
+                eléctricos, de soldadura y pintura que optimicen el rendimiento y la estética de sus motos.</p>
+
             <h3>Nuestro Objetivo</h3>
-            <p>Trabajamos incansablemente para ser líderes en la industria, enfocándonos en la satisfacción del cliente, la calidad en el trabajo y el respeto por cada moto que pasa por nuestras manos.</p>
-        
+            <p>Trabajamos incansablemente para ser líderes en la industria, enfocándonos en la satisfacción del cliente,
+                la calidad en el trabajo y el respeto por cada moto que pasa por nuestras manos.</p>
+
             <h3>Nuestros Valores</h3>
             <ul>
-                <li><strong>Pasión:</strong> Nos motiva la pasión por las motocicletas y la búsqueda constante de la perfección.</li>
+                <li><strong>Pasión:</strong> Nos motiva la pasión por las motocicletas y la búsqueda constante de la
+                    perfección.</li>
                 <li><strong>Integridad:</strong> Actuamos con honestidad y transparencia en cada interacción.</li>
-                <li><strong>Calidad:</strong> Nos esforzamos por entregar servicios de la más alta calidad en cada proyecto.</li>
-                <li><strong>Innovación:</strong> Buscamos continuamente soluciones creativas y tecnológicas para mantenernos a la vanguardia.</li>
-                <li><strong>Compromiso:</strong> Estamos comprometidos con la excelencia y la satisfacción total de nuestros clientes.</li>
+                <li><strong>Calidad:</strong> Nos esforzamos por entregar servicios de la más alta calidad en cada
+                    proyecto.</li>
+                <li><strong>Innovación:</strong> Buscamos continuamente soluciones creativas y tecnológicas para
+                    mantenernos a la vanguardia.</li>
+                <li><strong>Compromiso:</strong> Estamos comprometidos con la excelencia y la satisfacción total de
+                    nuestros clientes.</li>
             </ul>
-        
-            <p>En Skull Garage, cada moto que llega a nuestro taller recibe el mismo nivel de cuidado y atención que si fuera la nuestra. Confía en nosotros para transformar tu motocicleta en una obra maestra sobre ruedas.</p>
+
+            <p>En Skull Garage, cada moto que llega a nuestro taller recibe el mismo nivel de cuidado y atención que si
+                fuera la nuestra. Confía en nosotros para transformar tu motocicleta en una obra maestra sobre ruedas.
+            </p>
         </section>
-    
+
     </div>
     <footer class="site-footer">
         <!-- Footer Top Area -->
@@ -234,15 +260,15 @@
                         <div class="footer-wid">
                             <a href="#" class="footer-logo"><span class="footer-wid-title">Skull Garage</span></a>
                             <p>
-                                Con 5 años de experiencia en el mundo de las motocicletas, Skull Garage se 
-                                especializa en ofrecer servicios de mecánica, electricidad, soldadura y pintura para 
-                                motos de todo tipo. Nuestra dedicación a la perfección y la pasión por las 
-                                motocicletas nos impulsa a brindar soluciones integrales y de alta calidad para 
-                                mantener y mejorar tu vehículo de dos ruedas. Confía en nosotros para brindarte 
+                                Con 5 años de experiencia en el mundo de las motocicletas, Skull Garage se
+                                especializa en ofrecer servicios de mecánica, electricidad, soldadura y pintura para
+                                motos de todo tipo. Nuestra dedicación a la perfección y la pasión por las
+                                motocicletas nos impulsa a brindar soluciones integrales y de alta calidad para
+                                mantener y mejorar tu vehículo de dos ruedas. Confía en nosotros para brindarte
                                 servicios excepcionales y personalizados.
                             </p>
-                            
-                            
+
+
                             <a href="#" class="link-color">Visite Skull Garage <i
                                     class="fa  fa-long-arrow-right"></i></a>
                         </div>
@@ -339,8 +365,7 @@
         crossorigin="anonymous"></script>
     <!-- Leftlit js -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-   crossorigin=""></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
