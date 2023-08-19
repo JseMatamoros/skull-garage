@@ -106,8 +106,8 @@ body {
     line-height: 1.5;
 }
 /* leflit maps */
-#map { 
-    height: 50vh;
+#map {
+    height: 80vh;
     width: 100%;
     max-width: 100%;
 }
