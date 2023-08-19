@@ -1,16 +1,57 @@
 * {
     font-size: 23px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Barriecito', cursive;
+    
     /* font-family: 'Barriecito', cursive;
 font-family: 'Josefin Sans', sans-serif; */
 }
 
+/* body */
 
-/* navbar cortado */
 body {
     margin: 0;
     padding: 0;
+    
 }
+
+/* fondo */
+.container {
+    position: relative;
+    overflow: hidden; /* Evita que el contenido desborde del contenedor */
+}
+
+.container::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270%; /* Ajusta la altura según el efecto deseado */
+    background-image: url('../img/fondo.PNG');
+    background-size: 1500px; /* Ajusta el tamaño de la imagen según el efecto deseado */
+    background-repeat: no-repeat;
+    opacity: 0.03; /* Ajusta el valor de opacidad según lo deseado */
+    pointer-events: none; /* Evita que el seudoelemento interfiera con el contenido */
+    z-index: -1;
+    transform: translateZ(0); /* Soluciona problemas de parallax en algunos navegadores */
+    animation: parallaxBackground 60s linear infinite;
+}
+
+@keyframes parallaxBackground {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); /* Ajusta el valor según el efecto deseado */
+    }
+}
+
+
+
+
+
+/* navbar cortado */
 
 /* Estilos personalizados para el navbar */
 .navbar-custom {
@@ -68,6 +109,12 @@ body {
     margin-top: 10px;
     padding-top: 20;
     line-height: 1.5;
+}
+/* leflit maps */
+#map { 
+    height: 50vh;
+    width: 100%;
+    max-width: 100%;
 }
 
 

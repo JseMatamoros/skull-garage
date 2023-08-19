@@ -19,8 +19,14 @@
     <script src="https://kit.fontawesome.com/0c58bb2b05.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Josefin+Sans:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- leftlit js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- My Responsive CSS -->
@@ -32,7 +38,7 @@
     <nav class="navbar navbar-expand-lg text-white navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/skull-garage-transformed.png" width="80px" height="auto"
+                <img src="./assets/img/skull-garage-norma.jpeg" width="80px" height="auto"
                     alt="Logotipo de dos caras de Skull Garage">
             </a>
             <a class="navbar-toggler" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -44,10 +50,16 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     <a class="nav-link" href="#">Quienes somos</a>
-                    <a class="nav-link" href="https://www.google.com/maps/d/u/3/edit?mid=1DC7nb5sdIYLypErCKPARVCU9np4WQgE&usp=sharing" target="_blank">Visitanos</a>
+                    <a class="nav-link"
+                        href="https://www.google.com/maps/d/u/3/edit?mid=1DC7nb5sdIYLypErCKPARVCU9np4WQgE&usp=sharing"
+                        target="_blank">Visitanos</a>
+                        
+                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#">Galeria</a>
                     <a class="wathsapp-link nav-link" href="#" target="_blank">
                         Contactanos <i class="bi bi-whatsapp"></i>
                     </a>
+
 
                 </div>
             </div>
@@ -68,19 +80,19 @@
                     aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-                
-            
+
+
                 <div class="carousel-item active">
                     <div class="slide-content">
                         <div class="logo">
                             <img class="logo-img" src="./assets/img/skull-garage-transformed.png" alt="">
                         </div>
                         <div class="slide-text">
-                            <h5>Más Allá de la Restauración</h5>
+                            <h5>Mecánica General de Confianza</h5>
                             <p>
-                                Nos esforzamos por brindar más que una simple restauración.
-                                Creamos memorias, revitalizamos historias y damos nueva
-                                vida a los clásicos que amas.
+                                Nuestro taller ofrece servicios de mecánica general de alta calidad.
+                                Desde mantenimiento hasta reparaciones mayores, cuidamos de tus vehículos
+                                como si fueran nuestros propios clásicos.
                             </p>
                         </div>
                     </div>
@@ -92,11 +104,11 @@
                             <img class="logo-img" src="./assets/img/skull-garage-transformed.png" alt="">
                         </div>
                         <div class="slide-text">
-                            <h5>Pasión por la Excelencia</h5>
+                            <h5>Especialistas en Electricidad Automotriz</h5>
                             <p>
-                                Nuestro compromiso es entregar resultados excepcionales
-                                en cada proyecto. Nos apasiona superar expectativas y
-                                dejar huellas duraderas en el mundo automotriz.
+                                Nuestra experiencia en sistemas eléctricos automotrices nos permite diagnosticar
+                                y resolver problemas con precisión. Desde problemas de encendido hasta sistemas
+                                electrónicos avanzados, estamos aquí para ayudarte.
                             </p>
                         </div>
                     </div>
@@ -108,17 +120,17 @@
                             <img class="logo-img" src="./assets/img/skull-garage-transformed.png" alt="">
                         </div>
                         <div class="slide-text">
-                            <h5>Pasión por la Excelencia</h5>
+                            <h5>Arte en Soldadura para tu Vehículo</h5>
                             <p>
-                                Nuestro compromiso es entregar resultados excepcionales
-                                en cada proyecto. Nos apasiona superar expectativas y
-                                dejar huellas duraderas en el mundo automotriz.
+                                Nuestros soldadores expertos transforman el metal con destreza y creatividad.
+                                Desde reparaciones estructurales hasta modificaciones personalizadas,
+                                damos vida a tus ideas con precisión y calidad.
                             </p>
                         </div>
                     </div>
                     <img src="./assets/img/mecanico3.jpeg" class="d-block w-100" alt="Imagen 4">
                 </div>
-                
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -131,6 +143,56 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+    </div>
+    <!-- fondo -->
+    <div class="parallax-bg"></div>
+    <!-- fin fondo -->
+    <div class="container">
+        <!-- leflit map -->
+        <div class="card mt-5">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <!-- Contenido de texto a la derecha -->
+                        <h5 class="card-title">¡Te damos la bienvenida a nuestro nuevo local!</h5>
+                        <p class="card-text">Estamos emocionados de presentarte nuestras instalaciones recién inauguradas. Ven a visitarnos y descubre todo lo que tenemos para ofrecer.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Mapa a la izquierda -->
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Sección "¿Quiénes Somos?" -->
+        <section class="quienes-somos mt-5">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos más que un taller mecánico de motos; somos apasionados por las dos ruedas y la excelencia en el servicio. En Skull Garage, nuestra historia es una mezcla de pasión, dedicación y compromiso.</p>
+        
+            <h3>Nuestra Visión</h3>
+            <p>Aspiramos a ser reconocidos como el referente en soluciones de alta calidad para motocicletas, brindando innovación y excelencia en cada proyecto.</p>
+        
+            <h3>Nuestra Misión</h3>
+            <p>Nuestra misión es superar las expectativas de nuestros clientes al proporcionar servicios mecánicos, eléctricos, de soldadura y pintura que optimicen el rendimiento y la estética de sus motos.</p>
+        
+            <h3>Nuestro Objetivo</h3>
+            <p>Trabajamos incansablemente para ser líderes en la industria, enfocándonos en la satisfacción del cliente, la calidad en el trabajo y el respeto por cada moto que pasa por nuestras manos.</p>
+        
+            <h3>Nuestros Valores</h3>
+            <ul>
+                <li><strong>Pasión:</strong> Nos motiva la pasión por las motocicletas y la búsqueda constante de la perfección.</li>
+                <li><strong>Integridad:</strong> Actuamos con honestidad y transparencia en cada interacción.</li>
+                <li><strong>Calidad:</strong> Nos esforzamos por entregar servicios de la más alta calidad en cada proyecto.</li>
+                <li><strong>Innovación:</strong> Buscamos continuamente soluciones creativas y tecnológicas para mantenernos a la vanguardia.</li>
+                <li><strong>Compromiso:</strong> Estamos comprometidos con la excelencia y la satisfacción total de nuestros clientes.</li>
+            </ul>
+        
+            <p>En Skull Garage, cada moto que llega a nuestro taller recibe el mismo nivel de cuidado y atención que si fuera la nuestra. Confía en nosotros para transformar tu motocicleta en una obra maestra sobre ruedas.</p>
+        </section>
+    
     </div>
     <footer class="site-footer">
         <!-- Footer Top Area -->
@@ -170,11 +232,15 @@
                         <div class="footer-wid">
                             <a href="#" class="footer-logo"><span class="footer-wid-title">Skull Garage</span></a>
                             <p>
-                                Con 16 años de experiencia en restauraciones de vehículos, Skull Garage es
-                                especialista en chapa y pintura, restauración de automóviles clásicos para
-                                coleccionistas y para todos aquellos clientes que buscan excelencia y alta
-                                calidad en el servicio.
+                                Con 5 años de experiencia en el mundo de las motocicletas, Skull Garage se 
+                                especializa en ofrecer servicios de mecánica, electricidad, soldadura y pintura para 
+                                motos de todo tipo. Nuestra dedicación a la perfección y la pasión por las 
+                                motocicletas nos impulsa a brindar soluciones integrales y de alta calidad para 
+                                mantener y mejorar tu vehículo de dos ruedas. Confía en nosotros para brindarte 
+                                servicios excepcionales y personalizados.
                             </p>
+                            
+                            
                             <a href="#" class="link-color">Visite Skull Garage <i
                                     class="fa  fa-long-arrow-right"></i></a>
                         </div>
@@ -185,13 +251,14 @@
                                 <div class="footer-wid footer-menu">
                                     <h3 class="footer-wid-title">Mapa del sitio web</h3>
                                     <ul>
-                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Home</a></li>
-                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Sobre nosotros</a></li>
-                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Restauraciones</a></li>
+                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Inicio</a></li>
+                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Quienes somos</a></li>
+                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Visitanos</a></li>
                                         <li><a href="#"><i class="fa  fa-angle-right"></i> Servicios</a></li>
                                         <li><a href="#"><i class="fa  fa-angle-right"></i> Galeria</a></li>
+                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Facebook</a></li>
                                         <li><a href="#"><i class="fa  fa-angle-right"></i> Instagran</a></li>
-                                        <li><a href="#"><i class="fa  fa-angle-right"></i> Contacto</a></li>
+                                        <li><a href="#"><i class="fa  fa-angle-right"></i> wathsapp</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,6 +335,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Leftlit js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
