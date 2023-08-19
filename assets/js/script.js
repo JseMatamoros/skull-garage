@@ -8,14 +8,19 @@ $(document).ready(function() {
     $(".wathsapp-link").attr("href", whatsappLink);
 });
 
-// mapa de leaflet
-let map = L.map('map').setView([-18.4927381, -70.3313172],12)
+let map = L.map('map', {
+  dragging: false, // Desactivar el arrastre
+  zoomControl: false, // Desactivar el control de zoom
+  zoom: 12, // Nivel de zoom fijo
+  minZoom: 12, // Nivel de zoom mínimo
+  maxZoom: 12 // Nivel de zoom máximo
+}).setView([-18.4927381, -70.3313172], 12);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    
-}).addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 L.marker([-18.5268807, -70.2189621]).addTo(map)
-    .bindPopup('Siempre disponibles, las 24 horas los 7 dias de la semana!')
-    .openPopup();
+  .bindPopup('Siempre disponibles, las 24 horas los 7 días de la semana!')
+  .openPopup();
 // fin mapa
+
+
