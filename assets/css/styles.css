@@ -1,7 +1,7 @@
 * {
     font-size: 24px;
     font-family: 'Abril Fatface', cursive;
-    font-weight: 300;
+    font-weight: 100;
     
     /* font-family: 'Barriecito', cursive;
 font-family: 'Josefin Sans', sans-serif; */
@@ -13,22 +13,16 @@ font-family: 'Josefin Sans', sans-serif; */
     text-shadow: 1.5px 1.5px 3px rgba(255, 254, 254, 0.959); /* Agrega una sombra suave */
     letter-spacing: 1px; /* Ajusta el espaciado entre letras */
 }
-
-
 /* body */
-
 body {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
-
 /* fondo */
 .container {
     position: relative;
     overflow: hidden; /* Evita que el contenido desborde del contenedor */
 }
-
 .container::before {
     content: "";
     display: block;
@@ -46,7 +40,6 @@ body {
     transform: translateZ(0); /* Soluciona problemas de parallax en algunos navegadores */
     animation: parallaxBackground 60s linear infinite;
 }
-
 @keyframes parallaxBackground {
     0% {
         transform: translateY(0);
@@ -55,13 +48,6 @@ body {
         transform: translateY(-50%); /* Ajusta el valor según el efecto deseado */
     }
 }
-
-
-
-
-
-/* navbar cortado */
-
 /* Estilos personalizados para el navbar */
 .navbar-custom {
     background-color: #000; /* Cambia #000 al código de color que desees para el negro completo */
