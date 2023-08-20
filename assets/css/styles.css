@@ -105,6 +105,23 @@ body {
     padding-top: 20;
     line-height: 1.5;
 }
+/* titulo de lapagina */
+/* Estilos para la sección de bienvenida */
+.welcome-section {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 0;
+}
+
+.welcome-title {
+    font-size: 60px;
+    color: #333;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+}
+
+/* Otras reglas CSS existentes */
+
 /* leflit maps */
 #map {
     height: 80vh;
@@ -131,8 +148,5 @@ body {
     color: #555;
 }
 /* ##########################################################################################3 */
-
-
-
-
+/* motocicletas */
 
